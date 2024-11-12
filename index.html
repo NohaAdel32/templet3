@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<div>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-transparent bg-opacity-75">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logo.png"  >  </a>
+          <div class="lineV"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-ul">
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(206, 80, 80);">
+                 pages
+                </a>
+                <ul class="dropdown-menu bg-body-secondary">
+                  <li><a class="dropdown-item" href="#">room details</a></li>
+                  <li><a class="dropdown-item" href="#">blogs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">family room</a></li>
+                  <li><a class="dropdown-item" href="#">premium room</a></li>
+                  <li><a class="dropdown-item" href="#">single room</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#">contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 border-secondary" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn btn-danger me-3" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#login_Modal">Login</button>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="login_Modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header ">
+              <h4 class="modal-title text-light">Login</h4>
+              <button type="button" class="btn-close bg-secondary-subtle" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email Address:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <p class="p-email">we'll never share your email with anyone else</p>
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Remember Me</label>
+                      </div>
+                  </form>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer ">
+                <button type="submit" class="btn btn-danger me-auto">Login</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <!-- /model -->
+     <!-- /nav -->
+      <!-- crasoul -->
+      <section  class="caru-section">
+        <div id="carouselExampleCaptions" class="carousel slide" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/banner3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption  d-md-block">
+                <h5 class="text-uppercase fs-3">Sharm El-Shikh</h5>
+                <p>We love this city</p>
+                <button class="btn btn btn-danger " type="submit">Visit Us</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/banner1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption  d-md-block">
+                <h5 class="text-uppercase fs-3">ain sokhna</h5>
+                <p>We love this city</p>
+                <button class="btn btn btn-danger " type="submit">Visit Us</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/banner2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption  d-md-block">
+                <h5 class="text-uppercase fs-3">marsa matroh</h5>
+                <p>We love this city</p>
+                <button class="btn btn btn-danger " type="submit">Visit Us</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/blog1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption  d-md-block">
+                <h5 class="text-uppercase fs-3">marsa matroh</h5>
+                <p>We love this city</p>
+                <button class="btn btn btn-danger " type="submit">Visit Us</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="team-overlay position-fixed sticky-sm-bottom ">
+          <ul class="ul-icon">
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"> <i class="fa-brands fa-whatsapp"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul> 
+        </div>
+      </section>
+       <!-- /carsoul -->
+        <!-- about -->
+        <div class="about">
+        <h3 class="text-uppercase ms-4 pt-4 card1_title fw-bold">about us</h3>
+        <p class="card-text ms-4 me-4 fs-6" >
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own. </p>
+       <button type="button" class="btn btn-danger m-4">Read More</button>
+    </div>
+    <hr>
+    <div class="card2">
+        <h3 class="text-capitalize text-white bg-dark text-center p-5 bg-opacity-75">popular destinations in egypt</h3>
+    </div>
+         <!-- /about -->
+          <!-- accordian -->
+          <div class="accordion accordion-flush mt-3" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize fw-bold fs-5 rounded-4 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    giza city
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize fw-bold fs-5 rounded-4  " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    marsa matroh city
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize fw-bold fs-5 rounded-4 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    sharm el-shikh city
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+           <!-- /accordian -->
+            <hr>
+            <!-- for translate -->
+ <div class="translate mt-1">
+    <div class="translate-item">
+      <div class="translate-tile p-1 pt-2 rounded-1">
+        <h3 class="text-capitalize text-white bg-dark text-center p-2 rounded-2 bg-opacity-75">translate from arabic to english</h3>
+      </div>
+      <div class="translate-content bg-body-tertiary">
+       <div class="container-fluid ps-4 pe-4">
+     
+        <p class="text-capitalize  pt-4 fw-bold text-secondary">write and translate <span>press here</span></p>
+        <!-- <button type="button" class="btn btn-danger tooltip1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to Clipboard">
+          copy
+        </button> -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Copy to Clipboard" onclick="myFunction()">Copy</button>
+        <div class="input-group mt-4">
+          <textarea class="form-control" aria-label="With textarea" placeholder="translate" id="myInput"></textarea>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+    <hr>
+    <div class="translate-item">
+        <div class="translate-tile p-1  rounded-1">
+          <h3 class="text-capitalize text-white bg-dark text-center p-2 rounded-2 bg-opacity-75">translate from arabic to frensh</h3>
+        </div>
+        <div class="translate-content bg-body-tertiary">
+         <div class="container-fluid ps-4 pe-4">
+       
+          <p class="text-capitalize  pt-4 fw-bold text-secondary">write and translate <span>press here</span></p>
+          <!-- <button type="button" class="btn btn-danger tooltip1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to Clipboard">
+            copy
+          </button> -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Copy to Clipboard" onclick="myFunction()">Copy</button>
+          <div class="input-group mt-4">
+            <textarea class="form-control" aria-label="With textarea" placeholder="translate" id="myInput"></textarea>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+     <hr>
+    <div class="translate-item">
+        <div class="translate-tile p-1  rounded-1">
+          <h3 class="text-capitalize text-white bg-dark text-center p-2 rounded-2 bg-opacity-75">translate from arabic to germany</h3>
+        </div>
+        <div class="translate-content bg-body-tertiary">
+         <div class="container-fluid ps-4 pe-4">
+       
+          <p class="text-capitalize  pt-4 fw-bold text-secondary">write and translate <span>press here</span></p>
+          <!-- <button type="button" class="btn btn-danger tooltip1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to Clipboard">
+            copy
+          </button> -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Copy to Clipboard" onclick="myFunction()">Copy</button>
+          <div class="input-group mt-4">
+            <textarea class="form-control" aria-label="With textarea" placeholder="translate" id="myInput"></textarea>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+      
+   </div>
+   
+   <!-- /translate -->
+    <hr>
+    <!-- image -->
+     <div class="img ">
+<div class="img_overlay position-absolute bg-dark bg-opacity-50"></div>
+     </div>
+     <!-- /image -->
+      <!-- places -->
+     <div class="translate-tile   rounded-1">
+      <h3 class="text-uppercase text-white bg-dark text-center p-2 rounded-2 bg-opacity-75">popular rooms in hotel </h3>
+    </div>
+    <div class="container-fluid bg-body-secondary marg">
+      <div class="row d-flex justify-content-lg-around">
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example text to .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example text to .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example text to .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card "style="width:75%" >
+            <img src="image/gallery4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example text to .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example text to .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card  "style="width:75%" >
+            <img src="image/gallery6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 text-uppercase">gallery</h5>
+                <a href="#" class="btn btn-danger btn-sm">Know More</a>
+            </div>
+              <p class="card-text">Some quick example text to .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /places -->
+      <!-- image -->
+      <div class="img2 ">
+             </div>
+             <!-- /image -->
+      <hr>
+              <!--thanks  -->
+              <div class="card2">
+                <h3 class="text-uppercase text-white bg-dark text-center p-5 bg-opacity-75 pt-4 rounded-2"style="height: 90px;">thanks for</h3>
+            </div>
+            <div class="container mt-5 mb-5">
+              <div class="row d-flex justify-content-evenly">
+                  <div class="thank col-12 col-md-4">
+                      <div class="thank_img position-relative">
+                          <img src="image/girl.jpg" class="rounded-4" alt="" style="width: 100%; height: 100%;">
+                          <div class="img_overlay bg-opacity-75 bg-dark position-absolute rounded-4">
+                              <div class="d-flex align-items-start flex-column mb-3" style="height: 350px;">
+                                  <div class="mb-auto p-4 text-light">
+                                      <p>All thanks and appreciation</p>
+                                      <p class="text-uppercase overlay_title"><i class="fa-regular fa-clock"></i>&nbsp;October 15, 2015</p>
+                                  </div>
+                                  <div class="p-4 pb-2">
+                                      <img src="image/girl.jpg" alt="" width="80px" height="100px" class="rounded-circle border border-1 border-dark-subtle">
+                                      <p class="text-capitalize overlay_title2 text-light mb-0">eng.noha adel :"nona"</p>
+                                      <p class="text-capitalize overlay_title2 text-light mt-0">web development</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="thank col-12 col-md-4">
+                    <div class="thank_img position-relative">
+                      <img src="image/girl20-37967.jpg" class="rounded-4" alt="" style="width: 100%; height: 100%;">
+                      <div class="img_overlay bg-opacity-75 bg-dark position-absolute rounded-4">
+                          <div class="d-flex align-items-start flex-column mb-3" style="height: 350px;">
+                              <div class="mb-auto p-4 text-light">
+                                  <p>All thanks and appreciation</p>
+                                  <p class="text-uppercase overlay_title"><i class="fa-regular fa-clock"></i>&nbsp;October 15, 2015</p>
+                              </div>
+                              <div class="p-4 pb-2">
+                                  <img src="image/girl20-37967.jpg" alt="" width="80px" height="100px" class="rounded-circle border border-1 border-dark-subtle">
+                                  <p class="text-capitalize overlay_title2 text-light mb-0">eng.reem mostafa:"remo"</p>
+                                  <p class="text-capitalize overlay_title2 text-light mt-0">web development</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  
+                  <div class="thank col-12 col-md-4">
+                    <div class="thank_img position-relative">
+                      <img src="image/man1.jpg" class="rounded-4" alt="" style="width: 100%; height: 100%;">
+                      <div class="img_overlay bg-opacity-75 bg-dark position-absolute rounded-4">
+                          <div class="d-flex align-items-start flex-column mb-3" style="height: 350px;">
+                              <div class="mb-auto p-4 text-light">
+                                  <p>All thanks and appreciation</p>
+                                  <p class="text-uppercase overlay_title"><i class="fa-regular fa-clock"></i>&nbsp;October 15, 2015</p>
+                              </div>
+                              <div class="p-4 pb-2">
+                                  <img src="image/man1.jpg" alt="" width="80px" height="100px" class="rounded-circle border border-1 border-dark-subtle">
+                                  <p class="text-capitalize overlay_title2 text-light mb-0">eng.mohamed adel :"medo"</p>
+                                  <p class="text-capitalize overlay_title2 text-light mt-0">director of frontend</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  
+              </div>
+          </div>
+          
+              <!-- /thanks -->
+               <hr>
+               <h2 class="text-center text-uppercase pt-2" style="color:rgb(83, 73, 73);">hotel blogs</h2>
+               <!-- blogs -->
+               <div class="container">
+                <div class="card_blog  mb-3 m-auto border shadow-lg  bg-body-secondary mt-4" style="max-width: 90%; border-radius: 8px;" >
+                  <div class="row ">
+                    <div class="col-md-8 col-12 pt-4 ps-5 order-md-1 order-sm-2 order-2">
+                      <h3 class="text-capitalize " style="color: rgb(116, 40, 40);">Podcast Title</h3>
+                      <p class="p_blog"><i class="fa-regular fa-calendar-days"></i>Mon, 25th 2020</p>
+                      <div class="lineh"></div>
+                      <div class="card-body">
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit similique in expedita quaerat. Laudantium totam culpa officiis, ad eius voluptate blanditiis tempore minus! Cupiditate exercitationem distinctio repellendus consequatur enim illo..</p>
+                        <div class="blog_ul text-capitalize">
+                          <ul>
+                            <li><a href="#"><i class="fa-solid fa-podcast"></i>podcast</a></li>
+                            <li><a href="#"><i class="fa-solid fa-clock"></i>55 mins</a></li>
+                            <li class="li1"><a href="#"><i class="fa-solid fa-play"></i>play episode</a></li>
+                          </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 order-md-1 order-sm-1 order-1" style="height: 290px;">
+                      <img src="image/blog1.jpg" class="img_blog img-fluid rounded-end" alt="..." style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px ;">
+                    </div>
+                  </div>
+                </div>
+                <div class="card_blog mb-3 m-auto border shadow-lg bg-body-secondary mt-4 " style="max-width: 90%; border-radius: 8px;">
+                  <div class="row ">
+                    <div class="col-md-4 col-12 order-md-1 order-md-1 order-sm-1 order-1" style="height: 290px;">
+                      <img src="image/blog2.jpg" class="img_blog2 img-fluid rounded-start" alt="Podcast Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px ;">
+                    </div>
+                    <div class="col-md-8 p-3 col-12  order-md-1 order-sm-2 order-2">
+                      <h3 class="text-capitalize" style="color: rgb(116, 40, 40);">Podcast Title</h3>
+                      <p class="p_blog mb-1"><i class="fa-regular fa-calendar-days me-1"></i>Mon, 25th 2020</p>
+                      <div class="lineh" style="height: 2px; background-color: #742828; margin: 10px 0;"></div>
+                      <div class="card-body p-0">
+                        <p class="card-text" style="font-size: 0.9rem; color: #555;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit similique in expedita quaerat. Laudantium totam culpa officiis, ad eius voluptate blanditiis tempore minus! Cupiditate exercitationem distinctio repellendus consequatur enim illo..</p>
+                        <div class="blog_ul text-capitalize">
+                          <ul style="list-style-type: none; padding-left: 0; display: flex; gap: 15px;">
+                            <li><a href="#"><i class="fa-solid fa-podcast me-1"></i>Podcast</a></li>
+                            <li><a href="#"><i class="fa-solid fa-clock me-1"></i>55 mins</a></li>
+                            <li class="li2"><a href="#" ><i class="fa-solid fa-play me-1"></i>Play Episode</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+                <!-- blogs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <script src="js/script.js"></script> 
+</body>
+</html>
