@@ -264,4 +264,42 @@ color: whitesmoke!important;
 .li2:hover{
     background-color: rgb(85, 24, 24)!important;
 }
+/* General styling for mobile */
+@media (max-width: 576px) {
+    .card_blog {
+      max-width: 100%;
+      margin: 1rem auto;
+      padding: 10px;
+    }
+  
+    /* Adjust image styling */
+    .card_blog img {
+      height: 120px; /* Reduced height for mobile */
+      clip-path:none;
+    }
+    /* Modify layout - stacking content */
+    .card_blog .row {
+      flex-direction: column;
+    }
+  
+    /* List items styling */
+    .blog_ul ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-left: 0;
+    }
+  
+    /* Reduce padding */
+    .p_blog {
+      font-size: 0.9rem;
+    }
+  
+    /* Adjust play episode button */
+    .blog_ul .li1, .blog_ul .li2 {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  
 /* blog */
