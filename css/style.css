@@ -16,6 +16,14 @@
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+.title-foot{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(180deg, #f7f3f3 60%, #ca9a9a 40%, #767679 100%);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 /* nav */
 .lineV{
     width: 2px;
@@ -228,9 +236,7 @@ opacity: 0;
     margin-bottom: 10px;
     border-radius: 5px;
 }
-.card_blog{
-    height: 290px;
-}
+
 .card_blog:hover .lineh {
 width: 70px;
 transition: 1s;
@@ -267,43 +273,32 @@ color: whitesmoke!important;
 .li2:hover{
     background-color: rgb(85, 24, 24)!important;
 }
+.li3:hover{
+    background-color:#58881a!important;
+}
+.li4:hover{
+    background-color: #866f20!important;
+}
 /* General styling for mobile */
 @media (max-width: 576px) {
-    .card_blog {
-      max-width: 100%;
-      margin: 1rem auto;
-      padding: 10px;
+    .thank_img {
+        width: 60%;
     }
-  
-    /* Adjust image styling */
-    .card_blog img {
-      height: 120px; /* Reduced height for mobile */
+    .card_blog {
+      max-width: 90%;
+      overflow:hidden;
+    }
+    .card_blog img, .card_blog2 img {
+      height: 120px; 
       clip-path:none;
     }
-    /* Modify layout - stacking content */
     .card_blog .row {
-      flex-direction: column;
+      flex-direction: column; 
     }
-  
-    /* List items styling */
-    .blog_ul ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding-left: 0;
-    }
-  
-    /* Reduce padding */
     .p_blog {
       font-size: 0.9rem;
     }
-  
-    /* Adjust play episode button */
-    .blog_ul .li1, .blog_ul .li2 {
-      flex: 1;
-      text-align: center;
-    }
-  }
+}
  .shadow-lg-custom {
     box-shadow: 1px 1px 16px 12px rgba(7, 7, 7, 0.3) !important;
 }
