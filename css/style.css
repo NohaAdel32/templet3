@@ -42,12 +42,14 @@ text-transform:uppercase;
     margin-right: 10px;
 }
 .active1{
+    display: inline-block!important;
     border: 1px solid rgb(206, 80, 80) !important; 
     padding: 7px !important; 
     border-radius: 4px !important;
 }
 .active1:hover{
-    transform: scale(1.3);
+    transform: scaley(1.2);
+    background-color: #f5f5fa;
 }
 .p-email{
     font-size: 12px;
@@ -57,12 +59,11 @@ text-transform:uppercase;
     border-color: rgb(206, 80, 80) !important; 
 }
 .form-check-input:not(:checked)::after {
-    background-color: gray; /* لون الدائرة عند إلغاء التحديد */
+    background-color: gray;
 }
 .form-check-input {
     transition: background-color 0.3s, border-color 0.3s;
 }
-
 .modal-header, .modal-body, .modal-footer{
     background-color: rgba(12, 12, 12, 0.8)!important;
     color: white;
@@ -80,22 +81,20 @@ text-transform:uppercase;
 .ul-icon{
     text-decoration: none;
     list-style-type: none;
-
 }
 .team-overlay{
-   right: 20px;
+   right: 3%;
     z-index: 10;
     top: 30%;
 }
 .team-overlay a{
     text-align: center;
     display: block;
-    left:1250px !important;
-    margin-bottom: 30px;
-    width: 40px;
-    height: 40px;
+    margin-bottom: 40px;
+    width: 30px;
+    height: 30px;
     font-size: 50px;
-    color: rgb(160, 46, 46);
+    color: rgb(179, 86, 86);
 }
 .team-overlay a i{
     line-height: 40px;
@@ -128,7 +127,6 @@ text-transform:uppercase;
 .translate-content{
     margin-top: -10px;
 }
-
 /* /translate */
 /* img */
 .img{
@@ -164,8 +162,7 @@ background-repeat: no-repeat;
 .card {
     min-height: 400px !important; 
     position: relative;
-    /* width: 25%!important; عرض ثابت للبطاقة */
-    margin-left: auto; /* لتوسيط البطاقة في العمود */
+    margin-left: auto; 
     margin-right: auto;
 }
 .card::after{
@@ -236,7 +233,6 @@ opacity: 0;
     margin-bottom: 10px;
     border-radius: 5px;
 }
-
 .card_blog:hover .lineh {
 width: 70px;
 transition: 1s;
@@ -245,7 +241,6 @@ transition: 1s;
     text-decoration: none;
     margin-top: 50px;
     margin-left: -30px;
-
 }
 .blog_ul li{
     display: inline-block;
@@ -282,8 +277,17 @@ color: whitesmoke!important;
 /* General styling for mobile */
 @media (max-width: 576px) {
     .thank_img {
-        width: 60%;
+        width: 60%!important;
+        margin: auto;
     }
+.card_places{
+    width: 100%!important;
+}
+    .team-overlay{
+        right: 15%;
+         z-index: 10;
+         top: 30%;
+     }
     .card_blog {
       max-width: 90%;
       overflow:hidden;
